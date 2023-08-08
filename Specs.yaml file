@@ -1,0 +1,28 @@
+version: 2
+plan:
+  project-key: Myproject
+  key: MPCX
+  name: Checkmarx Scan
+stages:
+- Default Stage:
+    jobs:
+    - Scan
+Scan:
+  key: SCAN
+  tasks:
+  - checkout:
+      force-clean-build: 'false'
+      description: Checkout Default Repository
+  - any-task:
+      plugin-key: com.atlassian.bamboo.plugins.bamboo-docker-plugin:task.docker.cli
+      configuration:
+        commandOption: run
+        image: checkmarx/ast-cli
+        detach: 'false'
+        serviceWait: 'false'
+        command: /app/bin/cx scan create -s .  --project-name mybamboo --base-uri https://eu.ast.checkmarx.net --tenant dp_wp_account --client-id ADOCLient --client-secret Secret --branch master} 
+        workDir: /data
+        additionalArgs: --entrypoint=""
+        hostDirectory_0: ${bamboo.working.directory}
+        containerDataVolume_0: /data
+      description: Ast Scan
