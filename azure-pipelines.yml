@@ -6,7 +6,7 @@ steps:
     syncMode: true
     enableProxy: false
     enableSastScan: tru
-    CheckmarxService: 9.4SAST
+    CheckmarxService: CxSAST
     sastProxyUrl: 
     preset: High and Medium
     customPreset: 
