@@ -5,7 +5,7 @@ steps:
     projectName: 'Azure'
     syncMode: true
     enableProxy: false
-    enableSastScan: tru
+    enableSastScan: true
     CheckmarxService: CxSAST
     sastProxyUrl: 
     preset: High and Medium
