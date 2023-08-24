@@ -1,3 +1,5 @@
+Pool: Default
+Agent: RISHAVG-LT
 variables:
   system.debug: 'true'
   connexion_service_id_sast: 'CxSAST'
