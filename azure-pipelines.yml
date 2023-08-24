@@ -23,8 +23,8 @@ steps:
     fullScansScheduled: true
     fullScanCycle: 2
     forceScan: true
-    folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    folderExclusion: 
+    fileExtension: 
     projectCustomTags:
     scanCustomTags: 
     scaScanTimeout:
