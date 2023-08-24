@@ -20,8 +20,6 @@ steps:
     forceScan: true
     folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
     fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
-    manifestPattern: **/folder1/**, !**test.yaml
-    fingerprintPattern: **/folder1/**, !**test.yaml
     projectCustomTags:
     scanCustomTags: 
     scaScanTimeout:
