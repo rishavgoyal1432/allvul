@@ -1,5 +1,6 @@
 variables:
   system.debug: 'true'
+  connexion_service_id_sast: 'CxSAST'
   
 steps:
 - task: checkmarx.cxsast.cx-scan-task.Application security testing@2023
@@ -9,7 +10,7 @@ steps:
     syncMode: true
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: CxSAST
+    CheckmarxService: '${{ variables.connexion_service_id_sast }}'
     sastProxyUrl: 
     preset: High and Medium
     customPreset: 
