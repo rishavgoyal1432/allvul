@@ -1,11 +1,11 @@
 steps:
-- task: Checkmarx-Prerelease.cxsast.cx-scan-task.Application security testing@2022
+- task: checkmarx.cxsast.cx-scan-task.Application security testing@2023
   displayName: 'Application security testing'
   inputs:
     projectName: 'Azure'
     syncMode: true
     enableProxy: false
-    enableSastScan: true
+    enableSastScan: tru
     CheckmarxService: 9.4SAST
     sastProxyUrl: 
     preset: High and Medium
