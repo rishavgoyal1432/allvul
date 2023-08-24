@@ -1,5 +1,4 @@
-pool:
-agent: Default
+pool: Default
 variables:
   system.debug: 'true'
   connexion_service_id_sast: 'CxSAST'
