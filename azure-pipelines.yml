@@ -1,0 +1,63 @@
+steps:
+- task: Checkmarx-Prerelease.cxsast.cx-scan-task.Application security testing@2022
+  displayName: 'Application security testing'
+  inputs:
+    projectName: 'Azure'
+    syncMode: true
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 9.4SAST
+    sastProxyUrl: 
+    preset: High and Medium
+    customPreset: 
+    engineConfigId: 
+    fullTeamName: CxServer
+    sastCaChainFilePath: ''
+    overrideProjectSettings: false
+    incScan: false
+    fullScansScheduled: true
+    fullScanCycle: 2
+    forceScan: true
+    folderExclusion: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    fileExtension: 'cvs, .svn, .hg , .git, .bzr, bin , obj,  backup, .idea, node_modules'
+    manifestPattern: **/folder1/**, !**test.yaml
+    fingerprintPattern: **/folder1/**, !**test.yaml
+    projectCustomTags:
+    scanCustomTags: 
+    scaScanTimeout:
+    scanTimeout: 5
+    projectcustomfields: 
+    customfields: 
+    denyProject: false
+    comment: 'Sample YAML File'
+    postScanAction: 
+    generatePDFReport: true
+    vulnerabilityThreshold: false
+    failBuildForNewVulnerabilitiesEnabled: false
+    failBuildForNewVulnerabilitiesSeverity: 
+    high: 
+    medium: 
+    low: 
+    enablePolicyViolations: false
+    avoidDuplicateScans: false
+    enableDependencyScan: false
+    dependencyServerURL: 
+    scaProxyUrl: 
+    dependencyFileExtension: 
+    dependencyFolderExclusion: 
+    scaTeam: 
+    scaCaChainFilePath: 
+    scaConfigFilePaths: 
+    scaEnvVariables: 
+    isEnableScaResolver: 
+    scaResolverAddParameters: 
+    includeSource: 
+    scaExploitablePath: 
+    CheckmarxServiceForSca: 
+    scaProjectFullPath: 
+    scaProjectId:
+    scaEnablePolicyViolations: 
+    scaVulnerabilityThreshold: 
+    scaHigh: 
+    scaMedium: 
+    scaLow:
