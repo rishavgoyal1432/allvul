@@ -4,7 +4,7 @@ variables:
   connexion_service_id_sast: 'CxSAST'
   
 steps:
-- task: checkmarx.cxsast.cx-scan-task.Application security testing@2022
+- task: checkmarx.cxsast.cx-scan-task.Application security testing@2023
   displayName: 'Application security testing'
   inputs:
     projectName: 'Azure'
